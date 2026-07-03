@@ -1,0 +1,166 @@
+@charset "utf-8";
+ 
+.container{
+    width: 390px;
+    min-height: unset;
+    padding: 10px;
+    box-sizing: border-box;
+    }
+ 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+    }
+ 
+#screen-home {
+      background: #f5f7fb;
+      flex-direction: column;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .top-area {
+      min-height: 50vh;
+      background: linear-gradient(135deg, #0ba0ead7, #4dbeffe6);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px 30px;
+      flex-shrink: 0;
+      text-align: center;
+    }
+    .name-label {
+      font-size: 30px;
+     
+    }
+    .date-text {
+      font-size: 30px;
+      opacity: 0.9;
+      margin-bottom: 10px;
+      justify-content: center;
+    }
+    .departure-label {
+      font-size: 30px;
+      margin-bottom: 12px;
+      opacity: 0.9;
+    }
+    .departure-time {
+      font-size: 100px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      text-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .memo-label {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 0px;
+      color:white;
+      text-shadow: 0 5px 15px rgba(0, 0, 0, 0.186);
+      text-align: center;
+    }
+    .bottom-area {
+      padding: 30px 25px 20px;
+    }
+    .info-card {
+      background: white;
+      padding: 25px 30px;
+      margin-bottom: 0;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+    .info-title {
+      font-size: 30px;
+      font-weight: bold;
+      color: #0b4cc9;
+      margin-bottom: 14px;
+      text-align: center;
+    }
+    .info-content {
+      font-size: 30px;
+      font-weight: bold;
+      color: #414141;
+      min-height: 36px;
+      text-align: center;
+    }
+    .placeholder { color: #aaa; }
+    
+    .message-board{
+    width: 85%;
+    height: 15vh;
+    margin: 50px auto;
+    background: #fffef5;
+    border: 5px solid #d6d6d6;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.2);
+    position: relative;
+  }
+  .message-board::before{
+    content:"";
+    position:absolute;
+    top:-12px;
+    left:50%;
+    transform:translateX(-50%);
+    width:70%;
+    height:8px;
+    background:#999;
+    border-radius:4px;
+}
+    #message {
+      font-size: 25px;
+      font-weight: bold;
+      color:#5d4f8f;
+      text-align: center;
+      margin-top: -20px;
+    }
+ 
+   /* @media (max-width: 480px) {
+      .splash-title { font-size: 56px; }
+      .complete-title { font-size: 34px; }
+      .complete-message { font-size: 18px; }
+      .check-icon { font-size: 75px; }
+      .departure-time { font-size: 56px; }
+      .time-value { font-size: 30px; }
+    }*/
+ 
+    .clearbutton {
+      width: 50%;
+      padding: 16px;
+      border: none;
+      border-radius: 14px;
+      background: #4dbeffe6;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      font-family: inherit;
+      text-align: center;
+      margin-left: 25%;
+      border: 1.5px solid #333;
+      display: block;
+      margin-bottom: 0;
+      margin-top: 50px;
+    }
+ 
+    .changebutton {
+      width: 50%;
+      padding: 16px;
+      border: none;
+      border-radius: 14px;
+      background: #81a9f3;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      font-family: inherit;
+      text-align: center;
+      margin-top: 80px;
+      margin-left: 25%;
+      border: 1.5px solid #333;
+      display: block;
+      margin-bottom: 0;
+    }
+ 
